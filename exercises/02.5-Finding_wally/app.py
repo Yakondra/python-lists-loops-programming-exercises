@@ -2,3 +2,6 @@ people = [ 'Lebron','Aaliyah','Diamond','Dominique','Aliyah','Jazmin','Darnell',
 
 #Your code here:
 
+for a in range (len(people)):
+    if people[a] == 'Wally':
+        print(str(a))

@@ -16,5 +16,13 @@ def calculateAge(birthDate):
     return age
 
 name_list = list(map(lambda person:  person["name"] , people))
-print(name_list)
+birth_list = list(map(lambda person:  calculateAge(person["birthDate"]) , people))
 
+chan=[]
+for name, age in zip(name_list, birth_list):
+    plas = (name, age)
+    perro="Hello, my name is "+str(plas[0])+" and I am "+str(plas[1])+" years old"
+    chan.append(perro)
+print(chan)
+
+#print("Hello, my name is "+str(name_list)+" and I am "+str(birth_list)+" years old\n")

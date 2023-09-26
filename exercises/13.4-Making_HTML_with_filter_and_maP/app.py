@@ -9,4 +9,15 @@ all_colors = [
 ]
 
 #Your code go here:
+yey=[]
+def generate_li(color):
+    for x in color:
+        nombre=x["label"]
+        yey.append("<li>"+nombre+"</li>")
+    return yey
+    
+def filter_colors(all_colors):
+    sexy=list(filter(lambda hot: hot["sexy"], all_colors))
+    return generate_li(sexy)
 
+print(filter_colors(all_colors))

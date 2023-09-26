@@ -5,3 +5,10 @@ my_list = [3344,34334,454543,342534,4563456,3445,23455,234,262,2335,
 35,243,371,3251,351223,13231243,734,856,56,53,234342,56,545343]
 
 #Your code here:
+def minInteger(my_list):
+    number = 9273581533946252673
+    for x in my_list:
+        if (number == 0 or x < number):
+            number = x
+    return number
+print(minInteger(my_list))

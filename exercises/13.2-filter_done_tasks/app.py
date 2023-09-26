@@ -10,6 +10,10 @@ tasks = [
 	{ "label": 'Make a trip', "done": False }
 ]
 
-
 #Your code go here:
+noloiso = list(filter(lambda tarea: tarea ["done"], tasks))
+loiso=[]
+for tarea in noloiso:
+    loiso.append(tarea)
+print(loiso)
 
